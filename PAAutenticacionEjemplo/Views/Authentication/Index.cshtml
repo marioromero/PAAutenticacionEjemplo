@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Iniciar Sesión";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@if (ViewBag.Error != null)
+{
+    <div style="color:red;">@ViewBag.Error</div>
+}
+
+<form method="post">
+    <p>
+        Usuario: <input type="text" name="username" />
+    </p>
+    <p>
+        Contraseña: <input type="password" name="password" />
+    </p>
+    <p>
+        <input type="submit" value="Ingresar" />
+    </p>
+</form>
